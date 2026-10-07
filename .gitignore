@@ -1,0 +1,49 @@
+# Dataset and large audio files
+Dataset_Final/
+Dataset_Final.zip
+*.wav
+*.mp3
+*.flac
+*.m4a
+*.zip
+*.tar.gz
+
+# Pretrained model binaries and serialized weights
+*.joblib
+*.pkl
+*.pt
+*.bin
+
+# Intermediate feature caches and transcripts
+data/
+artifacts/
+scratch/
+transcripts_*.json
+features_*.csv
+
+# Python environment and bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and platform specific
+.vscode/
+.idea/
+.gemini/
+*.metadata.json
+.system_generated/
+.tasks/
+
+# Environment variables & secrets
+.env
+.env.*
+*.pem
+*.key

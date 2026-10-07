@@ -1,0 +1,9 @@
+{
+  "num_training_samples": 769,
+  "num_features": 63,
+  "training_rmse": 0.2765289098293186,
+  "training_pred_min": 0.0,
+  "training_pred_max": 5.0,
+  "training_pred_mean": 3.306950585175552,
+  "training_pred_std": 1.0897172323372901
+}
