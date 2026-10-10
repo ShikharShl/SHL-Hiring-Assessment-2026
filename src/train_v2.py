@@ -22,8 +22,7 @@ def main(work="C:/dataset_work", data="C:/dataset", out="final_submission_v2.csv
     pos = {f: i for i, f in enumerate(hc.filename)}
     ti = [pos[f] for f in tr.filename]; ei = [pos[f] for f in te.filename]
     y = tr.label.values.astype(float)
-    wn = open(f"{feats}/wenc.npy.names").read().split("
-"); W = np.load(f"{feats}/wenc.npy")
+    wn = open(f"{feats}/wenc.npy.names").read().splitlines(); W = np.load(f"{feats}/wenc.npy")
     W = W[[wn.index(f) for f in hc.filename]]  # align audio embeddings to the handcrafted-feature row order
     sets = {"wenc": W, "wtab": np.hstack([tabv, PCA(48, random_state=0).fit_transform(StandardScaler().fit_transform(W))]), "emb": emb, "tab": tabv, "all": np.hstack([tabv, PCA(32, random_state=0).fit_transform(emb)])}
     models = {
